@@ -24,7 +24,6 @@
 }
 
 .nav {
-    display: none;
     position: absolute;
     background-color: rgb(68, 112, 68);
     height: 100vh; 
@@ -32,10 +31,16 @@
     left: 55%;
     width: 45%;
     box-shadow: -5px 0px 6px -3px rgba(0, 0, 0, .75);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(200px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
 .nav.active {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 .nav__list {
