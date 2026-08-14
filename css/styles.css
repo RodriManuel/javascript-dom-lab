@@ -34,6 +34,10 @@
     box-shadow: -5px 0px 6px -3px rgba(0, 0, 0, .75);
 }
 
+.nav.active {
+    display: block;
+}
+
 .nav__list {
     list-style-type: none;
     display: flex;
